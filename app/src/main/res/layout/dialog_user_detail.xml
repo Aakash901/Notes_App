@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/dialogName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/dialogUserPic"
+        android:text="Name" />
+
+    <TextView
+        android:layout_below="@id/dialogName"
+        android:id="@+id/dialogEmail"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:layout_toStartOf="@id/dialogUserPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+    <TextView
+        android:layout_below="@id/dialogEmail"
+        android:id="@+id/deleteAllDB"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:textColor="@color/red"
+        android:layout_toStartOf="@id/dialogUserPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Delete Database" />
+    <TextView
+        android:layout_below="@id/deleteAllDB"
+        android:id="@+id/signOutBtn"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:textColor="@color/mainColor"
+        android:layout_toStartOf="@id/dialogUserPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Logout " />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_alignParentEnd="true"
+        android:id="@+id/dialogUserPic"
+        app:shapeAppearanceOverlay="@style/circular"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_launcher_foreground" />
+
+
+</RelativeLayout>

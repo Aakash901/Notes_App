@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="YellowScrollBar">
+        <item name="android:scrollbarThumbVertical">@drawable/yellow_scrollbar_thumb</item>
+    </style>
+
+</resources>
